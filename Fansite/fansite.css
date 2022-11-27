@@ -1,0 +1,413 @@
+* {
+  margin: 0;
+  padding: 0%;
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  font-family: 'Audiowide', cursive;
+  background-color: #f4f4f4;
+}
+
+/* header */
+header {
+  background-color: black;
+}
+
+header :is(section, img) {
+  margin-top: 0;
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+}
+
+header section>a {
+  font-size: 40px;
+  color: white;
+}
+
+header ul {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+header li {
+  margin-left: 90px;
+  margin-right: 40px;
+  width: auto;
+}
+
+header ul a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+header section :hover {
+  text-decoration: none;
+  color: yellow;
+}
+header img {
+  animation-name: slidein;
+  animation-duration: 1s;
+}
+
+@keyframes slidein {
+  from { transform: translateX(-1920px);}
+  to {transform: translateX(0px);}
+}
+
+/* footer */
+
+footer {
+  background: rgb(0,0,0);
+  background: linear-gradient(72deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 77%, rgba(254,255,0,1) 100%);
+  padding-top: 3em;
+  padding-bottom: 3em;
+  text-align: center;
+}
+
+footer a {
+  color: white;
+}
+
+footer :hover {
+  color: black;
+  background-color: yellow;
+}
+
+/* main index */
+
+.acceuil {
+  background-image: url(images/1920x1200_px_Moto_GP_Valentino_Rossi_Yamaha_2.jpg);
+  width: 100%;
+  height: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+main .description {
+  display: flex;
+  color: white;
+  width: 50%;
+  margin-bottom: 10em;
+}
+
+@keyframes transition {
+  0% {
+    margin-left: -200px;
+    opacity: 0;
+  }
+
+  100% {
+    margin-left: 0;
+    opacity: 1;
+  }
+}
+
+article {
+  opacity: 0;
+  animation: transition 2s ease-in-out 0s forwards;
+}
+
+main .description p {
+  background-color: rgba(0, 0, 0, 0.600);
+  font-size: 25px;
+  margin-left: 1.5em;
+  padding-left: 1em;
+}
+
+main .qatar {
+  width: 20%;
+  border-radius: 25%;
+  border: 5px solid yellow;
+}
+
+main .description2 {
+  display: flex;
+  color: white;
+  width: 50%;
+  margin-bottom: 10em;
+}
+
+main .description2 p {
+  background-color: rgba(0, 0, 0, 0.600);
+  font-size: 25px;
+  margin-left: 1.5em;
+  padding-left: 1em;
+}
+
+main .thedoctor {
+  width: 21%;
+}
+
+main .description3 {
+  display: flex;
+  color: white;
+  width: 50%;
+  margin-bottom: 5em;
+}
+
+main .description3 p {
+  background-color: rgba(0, 0, 0, 0.600);
+  font-size: 25px;
+  margin-left: 1.5em;
+  padding-left: 1em;
+}
+
+main .Audi {
+  border-radius: 25%;
+  border: 5px solid yellow;
+  width: 21%;
+}
+
+/* main historique */
+
+.Historique {
+background: rgb(0,0,0);
+background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 77%, rgba(254,255,0,1) 100%);
+}
+
+.résumé h1{
+  color: white;
+  font-size: xx-large;
+  text-align: center;
+  margin-left: 10em;
+  margin-right: 10em;
+  padding-top: 5em;
+}
+
+.résumé p {
+  color: white;
+  font-size: 26px;
+  margin-left: 15em;
+  margin-right: 15em;
+  margin-top: 5em;
+  text-align: left;
+}
+
+.résumé img {
+  width: 40%;
+  margin-left: 37em;
+  border-radius: 20%;
+  border: 5px solid yellow;
+}
+
+.résumé span {
+  color: yellow;
+}
+
+/* réseaux */
+
+.réseaux {
+  background-image: url(images/1920x1200_px_Moto_GP_Valentino_Rossi_Yamaha_2.jpg);
+  height: 1200px;
+  color: white;
+}
+
+.insta {
+  display: flex;
+  justify-content: center;
+
+}
+
+.insta h2 {
+  padding-top: 1em;
+  font-size: 60px;
+}
+
+.facebook {
+  display: flex;
+  justify-content: center;
+}
+
+.facebook h2 {
+  padding-top: 1em;
+  font-size: 60px;
+}
+
+.twitter {
+  display: flex;
+  justify-content: center;
+  padding-right: 5em;
+}
+
+.twitter h2 {
+  padding-top: 1em;
+  font-size: 60px;
+}
+
+.VRstore {
+  display: flex;
+  justify-content: center;
+  padding-left: 6em;
+}
+
+.VRstore h2 {
+  padding-top: 1em;
+  padding-left: 0.5em;
+  font-size: 60px;
+}
+
+.VROW {
+  display: flex;
+  justify-content: center;
+  padding-left: 18em;
+}
+
+.VROW h2 {
+  padding-top: 1em;
+  font-size: 60px;
+  padding-left: 0.5em;
+}
+
+@keyframes apparition {
+  0% {
+    margin-left: 200px;
+    opacity: 0;
+  }
+
+  100% {
+    margin-left: 0;
+    opacity: 1;
+  }
+}
+
+.réseaux section {
+  opacity: 0;
+  animation: apparition 2s ease-in-out 0s forwards;
+}
+
+/* contact */
+
+body {
+  background: rgb(0,0,0);
+background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 73%, rgba(254,255,0,1) 100%);;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 72px;
+  color: white;
+  text-align: center;
+}
+
+h4 {
+  font-weight: 400;
+  font-size: 20px;
+  color: #9b9b9b;
+  line-height: 1.5;
+}
+
+input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid ~ label {
+  font-size: 0.75em;
+  color: #999;
+  top: -5px;
+  -webkit-transition: all 0.225s ease;
+  transition: all 0.225s ease;
+}
+
+.styled-input {
+  float: left;
+  width: 293px;
+  margin: 1rem 0;
+  position: relative;
+  border-radius: 4px;
+}
+
+@media only screen and (max-width: 768px){
+  .styled-input {
+      width:100%;
+  }
+}
+
+.styled-input label {
+  color: #999;
+  padding: 1.3rem 30px 1rem 30px;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  pointer-events: none;
+}
+
+.styled-input.wide { 
+  width: 650px;
+  max-width: 100%;
+}
+
+input,
+textarea {
+  padding: 30px;
+  border: 0;
+  width: 100%;
+  font-size: 1rem;
+  background-color: #2d2d2d;
+  color: white;
+  border-radius: 4px;
+}
+
+input:focus,
+textarea:focus { outline: 0; }
+
+input:focus ~ span,
+textarea:focus ~ span {
+  width: 100%;
+  -webkit-transition: all 0.075s ease;
+  transition: all 0.075s ease;
+}
+
+textarea {
+  width: 100%;
+  min-height: 15em;
+}
+
+.input-container {
+  width: 650px;
+  max-width: 100%;
+  margin: 20px auto 25px auto;
+}
+
+.submit-btn {
+  padding: 7px 35px;
+  border-radius: 60px;
+  display: inline-block;
+  background-color: yellow;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.06),
+            0 2px 10px 0 rgba(0,0,0,0.07);
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.submit-btn:hover {
+  transform: translateY(1px);
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,0.10),
+            0 1px 1px 0 rgba(0,0,0,0.09);
+}
+
+@media (max-width: 768px) {
+  .submit-btn {
+      width:100%;
+      float: none;
+      text-align:center;
+  }
+}
+
+input[type=checkbox] + label {
+color: #ccc;
+font-style: italic;
+} 
+
+input[type=checkbox]:checked + label {
+color: #f00;
+font-style: normal;
+}
